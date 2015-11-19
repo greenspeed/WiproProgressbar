@@ -193,6 +193,9 @@ angular.module('myApp.view1', ['ngRoute','underscore'])
     function reset() {
       $scope.model = [];
       $scope.model2 = [];
+      $scope.list2 = [];
+      $scope.list = [];
+      updateList();
     };
 
     function clickCategory(index) {
