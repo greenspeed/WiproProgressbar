@@ -1,1 +1,33 @@
-<p>This is the partial for view 1.</p>
+
+
+<div class="container">
+
+	<ul class="nav nav-pills">
+	    <li ng-repeat="f in feature"  class="c2c-category-button" ng-class ="{'active': $index == selectedCategory}" ng-click="clickCategory($index)"><a>{{f.label}}</a></li>
+  	</ul>
+  		<select
+              ng-model="model"
+              ng-options="obj as obj.label for obj in list | filter:selectedCategoryFilter | orderBy: 'label'"
+              multiple
+ 
+              class="c2c-selectbox"
+              >
+      </select>
+      <div class="c2c-selectbutton-container">
+	      <button class="btn btn-large c2c-selectbutton" ng-click="selectRight()"><span class="glyphicon glyphicon-chevron-right"></span></button>
+	      <button class="btn btn-large c2c-selectbutton" ng-click="selectLeft()"><span class="glyphicon glyphicon-chevron-left"></span></button>
+  	  </div>
+      <select
+              ng-model="model2"
+              ng-options="obj as obj.label disable when obj.validFor == null for obj in list2"
+              multiple
+   
+              class="c2c-selectbox"
+              >
+      </select>
+      <div class="row">
+        <button class="btn btn-large" ng-click="reset()">Reset</button>
+      </div>
+
+      
+    </div>

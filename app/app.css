@@ -28,3 +28,29 @@
   content: "";
   padding: 0;
 }
+
+.c2c-selectbox {
+  height: 300px !important;
+  margin-top: 1% !important;
+  width: 300px;
+}
+
+.c2c-selectbutton-container {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 20%;
+}
+
+.c2c-selectbutton {
+  background-color: white;
+  display: block;
+  margin-top: 10% !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.c2c-category-button {
+  margin-left: 2% !important;
+}
