@@ -54,3 +54,33 @@
 .c2c-category-button {
   margin-left: 2% !important;
 }
+
+.progress {
+  position: relative;
+  height: 3em;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: center;
+  i {line-height: 3.5em;}
+}
+
+.progress span {
+  position: absolute;;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.progress-bar {
+  transition: width 1s ease-in-out;
+  height: 3.5em;
+  line-height: 3.5em;
+}
+
+.option-div {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width:40%;
+}
